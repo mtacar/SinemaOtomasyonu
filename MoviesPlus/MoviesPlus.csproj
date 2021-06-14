@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9011A790-A408-4059-AFDD-B808B28E91C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MoviesPlus</RootNamespace>
+    <AssemblyName>MoviesPlus</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects1">
+      <HintPath>bin\Debug\AxShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addmovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addmovies.Designer.cs">
+      <DependentUpon>addmovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booked.Designer.cs">
+      <DependentUpon>booked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookM.Designer.cs">
+      <DependentUpon>BookM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canceltik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="canceltik.Designer.cs">
+      <DependentUpon>canceltik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printtik.cs" />
+    <Compile Include="log.cs" />
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homemanager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homemanager.Designer.cs">
+      <DependentUpon>homemanager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager.Designer.cs">
+      <DependentUpon>manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdihome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdihome.Designer.cs">
+      <DependentUpon>mdihome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movied.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movied.Designer.cs">
+      <DependentUpon>Movied.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="pwait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwait.Designer.cs">
+      <DependentUpon>pwait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signuppg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signuppg.Designer.cs">
+      <DependentUpon>signuppg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signinpg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signinpg.Designer.cs">
+      <DependentUpon>signinpg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addmovies.resx">
+      <DependentUpon>addmovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booked.resx">
+      <DependentUpon>booked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookM.resx">
+      <DependentUpon>BookM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canceltik.resx">
+      <DependentUpon>canceltik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homemanager.resx">
+      <DependentUpon>homemanager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager.resx">
+      <DependentUpon>manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdihome.resx">
+      <DependentUpon>mdihome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movied.resx">
+      <DependentUpon>Movied.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwait.resx">
+      <DependentUpon>pwait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signuppg.resx">
+      <DependentUpon>signuppg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signinpg.resx">
+      <DependentUpon>signinpg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21399-red-stage-curtain-1920x1080-abstract-wallpaper - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captain Ameraca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raman-raghav.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\independence_day_resurgence.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful_line_on_black_background-wallpaper-1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\130068-whitewashed-star-patterned-icon-alphanumeric-crossing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading_icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1291107.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %283%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KAIST-loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading %281%29.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
