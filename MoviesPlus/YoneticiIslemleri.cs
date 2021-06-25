@@ -931,7 +931,11 @@ namespace WindowsFormsApp1
            
         }
 
-  
+        private void button14_Click(object sender, EventArgs e)
+        {
+            SeansIslemleri si = new SeansIslemleri();
+            si.Show();
+        }
 
         private void button8_Click(object sender, EventArgs e)
         {
