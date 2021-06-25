@@ -17,30 +17,6 @@ namespace Kafe_Restorant_Yonetim_Sistemi
             InitializeComponent();
         }
 
-        private void btnUrunGozat_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.Title = "Resimi Seçiniz";
-            openFileDialog1.Filter = "Tümü|*.png;*.jpg;*ico;*.gif|png|*.png|jpeg|*.jpg|icon|*ico|gif|*.gif";
-            openFileDialog1.DefaultExt = "jpg";
-            openFileDialog1.RestoreDirectory = true;
-            openFileDialog1.FileName = "";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    System.IO.File.Copy(@openFileDialog1.FileName, openFileDialog1.SafeFileName);
-                    lblGozat.Text = @openFileDialog1.SafeFileName;
-                    pictureBox1.Image = Image.FromFile(lblGozat.Text);
-                    pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-                }
-                catch
-                {
-                    MessageBox.Show("Aynı ürün resmi mevcut");
-                }
-
-            }
-
-        }
 
         private void btnGrupEkle_Click(object sender, EventArgs e)
         {
