@@ -85,6 +85,10 @@ namespace Kafe_Restorant_Yonetim_Sistemi
 
         }
 
-       
+        private void gridSatisDetayUrun_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }
